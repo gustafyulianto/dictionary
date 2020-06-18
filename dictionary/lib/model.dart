@@ -6,9 +6,9 @@ class Posts {
 
   Posts({this.userId, this.id, this.title, this.body});
 
-  factory Posts.formJson(Map <String, dynamic> json){
+  factory Posts.formJson(Map<String, dynamic> json) {
     return new Posts(
-      userId: json['userId'],
+      userId: json['user_Id'],
       id: json['id'],
       title: json['title'],
       body: json['body'],
