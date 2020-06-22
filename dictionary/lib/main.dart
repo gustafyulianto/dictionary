@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
     });
     _list.clear();
     final response =
-        await http.get("http://10.255.99.16/flutter_server/koneksi.php");
+        await http.get("https://jsonplaceholder.typicode.com/posts");
     print(response.body);
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
